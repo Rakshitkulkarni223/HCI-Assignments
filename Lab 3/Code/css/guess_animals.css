@@ -1,0 +1,85 @@
+body {
+    background-image: url('https://www.corecls.com/wp-content/uploads/2021/11/Modern-notebook-computer-with-future-technology-media-symbols-1.jpeg');
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+fieldset.group {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.25em;
+    margin-top: -2%;
+    padding: .125em;
+    background-color: rgb(247, 147, 117);
+}
+
+fieldset.group legend {
+    margin: 0;
+    padding: .07%;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+    margin-left: 20px;
+    font-size: 150%;
+    color: rgb(7, 7, 7);
+}
+
+ul.checkbox {
+    margin: 0;
+    padding: 0;
+    margin-left: 5%;
+    list-style: none;
+}
+
+ul.checkbox li input {
+    margin-right: .25em;
+}
+
+ul.checkbox li {
+    margin-bottom: 2%;
+    margin-top: 1%;
+    border: 1px transparent solid;
+    display: inline-block;
+    width: 12em;
+}
+
+ul.checkbox li label {
+    margin-left: 0%;
+    font-size: 20px;
+    font-family: "Lucida Bright";
+}
+
+ul.checkbox li:hover,
+ul.checkbox li.focus {
+    background-color: lightyellow;
+    border: 1px gray solid;
+    width: 12em;
+}
+
+#score_board
+{
+    margin-left: 36.5%;
+    border:1px solid black;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    background-color: rgb(210, 240, 102);
+    width: 30%;
+    padding: 1%;
+    display: none;
+    text-align: center;
+}
+
+
+input[type=submit] {
+    margin-left: 48%;
+    padding: 0.5% 1.5%;
+    font-weight: bold;
+    background:rgb(4, 253, 232); 
+    border:1px solid black;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    font-family: "Segoe Print";
+}

@@ -1,0 +1,68 @@
+#filltext {
+    margin-left: 12.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: skyblue;
+    width: 75%;
+    padding: 1%;
+}
+
+#progressBar
+{
+    width: 100%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eeeeee;
+}
+
+progress::-webkit-progress-value {
+    background-color: #08ecb3 !important;
+}
+
+/* For IE10 */
+progress {
+    background-color: #eee;
+}
+
+progress {
+    background-color: #f132a2;
+}
+  
+
+.styled-table {
+    border-collapse: collapse;
+    margin-left: 33%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: sans-serif;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #e9811f;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #5B84B1FF;
+    color: white;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #FC766AFF;
+    color: black;
+}

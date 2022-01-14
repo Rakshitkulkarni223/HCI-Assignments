@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/guess_animals.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Animals Name Page</title>
+</head>
+<body>
+    <fieldset class="group">
+        <legend><h3>Select 10 Animals Name</h3></legend>
+        <ul class="checkbox" id="check"></ul>
+    </fieldset>
+
+    <div id="score_board">
+        <h3 >Maximum Score : <span>10</span></h3>
+        <h3>Your Score : <span id="score"></span></h3>
+        <input type="submit" name="home" id="home" value="QUIT" style="margin-left:0%;" onclick="window.location.href='home.html'">
+        <input type="submit" name="restart" id="restart" value="RESTART" style="margin-left:0%;" onclick="window.location.href='instructions.html'">
+    </div>
+
+    <input type="submit" name="display_result" id="display_result" value="DONE" onclick="check()">
+</body>
+<script src="guess_animals.js"></script>
+</html>
+
+<!-- https://docs.google.com/document/d/1jL3ct84aJ93VbssNNcP176HHeYYBee0mWCAYl5TKS98/edit -->
