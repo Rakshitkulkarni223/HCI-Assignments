@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <title>Fitts’ Law Simulation Page</title>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">Home</a>
+        <a href="simulation.html" class="active">Simulation</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div id="container">
+                <canvas id="myCanvas" height="500" width="900" style="margin-left: 14%;margin-top: 1%;"></canvas>
+            </div>
+        </div>
+
+        <div class="column">
+            <div id="table_creation">
+            </div>
+        </div>
+    </div>
+
+    <audio id="create_circle">
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="end">
+        <source src="end.mp3" type="audio/mp3">
+    </audio>
+    
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+    </script>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

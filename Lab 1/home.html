@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <title>Fitts’ Law Home Page</title>
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="home.html" class="active">Home</a>
+    <a href="simulation.html">Simulation</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div id="header">
+    <h1 style="color: aliceblue;text-align: center;">HUMAN COMPUTER INTERACTION</h1>
+  </div>
+
+  <div id="image">
+    <img alt="NITK logo" class="center"
+      src="https://www.seekpng.com/png/full/251-2517457_national-institute-of-technology-karnataka-surathkal-nit-surathkal.png">
+  </div>
+
+  <div id="content" style="margin-left: 4%; margin-right: 2%;">
+
+    <h2 style="color: rgb(243, 8, 8);">What is Fitts’ Law?</h2>
+
+    <p style="color: rgb(120, 236, 12);"">
+      Fitts’ law states that the amount of time required for a person to move a pointer (e.g., mouse cursor) to a target
+      area is a function of the distance to the target divided by the size of the target. Thus, the longer the distance
+      and the smaller the target’s size, the longer it takes.
+    </p>
+
+    <p style=" color: rgb(8, 176, 243);">
+      In 1954, psychologist Paul Fitts, examining the human motor system, showed that the time required to move to a
+      target depends on the distance to it, yet relates inversely to its size. By his law, fast movements and small
+      targets result in greater error rates, due to the speed-accuracy trade-off. Although multiple variants of Fitts’
+      law exist,all encompass this idea.
+    </p>
+
+    <p style="color: rgb(8, 176, 243);">
+      Fitts’ law is widely applied in user experience (UX) and user interface (UI) design. For example, this law
+      influenced the convention of making interactive buttons large (especially on finger-operated mobile
+      devices) smaller buttons are more difficult (and time-consuming) to click. Likewise, the distance between a user’s
+      task/attention area and the task-related button should be kept as short as possible.
+    </p>
+
+    <p style="color: rgb(8, 176, 243);">
+      The law is applicable to rapid, pointing movements, not continuous motion (e.g., drawing). Such movements
+      typically consist of one large motion component (ballistic movement) followed by fine adjustments to acquire (move
+      over) the target. The law is particularly important in visual interface design or any interface involving pointing
+      (by finger or mouse, etc.): we use it to assess the appropriate sizes of interactive elements according to the
+      context of use and highlight potential design usability problems. By following Fitts’ law, standard interface
+      elements such as the right-click pop-up menu or short drop-down menus have had resounding success, minimizing the
+      user’s travel distance with a mouse in selecting an option reducing time and increasing productivity. Conversely,
+      long drop-downs, title menus, etc., impede users’ actions, raising movement-time demands.
+    </p>
+
+    <p style="color: aliceblue;">
+      Mathematically it can be written as
+    </p>
+
+    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a02102e0df083ef5041366fdc0f9015ea0322967"
+      alt="fitts' law equation" style="background-color: azure;" ;>
+
+    <p style="color: aliceblue;">
+      where:
+    </p>
+
+    <div style="margin-left: 5%;">
+      <p style="color: aliceblue;">
+        • MT is the average time to complete the movement.
+      </p>
+      <p style="color: aliceblue;">
+        • a and b are constants that depend on the choice of input device and are usually determined empirically by
+        regression analysis. a defines the intersection on the y axis and is often interpreted as a delay. The b
+        parameter
+        is a slope and describes an acceleration. Both parameters show the linear dependency in Fitts's law.[10]
+      </p>
+      <p style="color: aliceblue;">
+        • ID is the index of difficulty.
+      </p>
+      <p style="color: aliceblue;">
+        • D is the distance from the starting point to the center of the target.
+      </p>
+      <p style="color: aliceblue;">
+        • W is the width of the target measured along the axis of motion. W can also be thought
+        of as the allowed error tolerance in the final position, since the final point of the motion must fall within
+        ±W⁄2 of the target's center.
+      </p>
+    </div>
+
+    <div id="instruction">
+      <h2 style="color: rgb(236, 156, 6);">Instructions For Performing The Simulation:</h2>
+      <p style="color: aliceblue;">
+        1. Create a user interface (ideally web-based) that displays an circle on the screen.</p>
+      <p style="color: aliceblue;">
+        2. You must click on the circle immediately after it appears.</p>
+      <p style="color: aliceblue;">
+        3. After you click the first circle, another circle will appear on the screen with a random size, colour, and
+        position.</p>
+      <p style="color: aliceblue;">
+        4. Immediately upon seeing this next circle, click on it as well.</p>
+      <p style="color: aliceblue;">
+        5. Continue steps 3 and 4 indefinitely if circles continue to develop (about 30 circles).</p>
+      <p style="color: aliceblue;">
+        6. Construct a table including information about your selection time, target circle distances, and circle
+        dimensions (a,b,A,W,MT).
+      </p>
+      <p style="color: aliceblue;">7. Plot a graph with diameter of target along x-axis and corresponding selection time
+        on y-axis.
+      </p>
+    </div>
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
+
