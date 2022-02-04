@@ -1,0 +1,113 @@
+body {
+    /* background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202003/environmental-protection-32692.jpeg?nmkr9U.sdWIkbc8XGSs1hdVUowfPxqHP&size=770:433); */
+    background-image: url(https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_2580,c_limit/BlackForest-Germany-GettyImages-147180370.jpg);
+    display: flex;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 40px auto;
+    color: rgb(247, 165, 12);
+    font: 20px Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+form p {
+    margin: 0 auto 20px;
+    color: rgb(252, 6, 6);
+    font: 12px Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+form label {
+    position: relative;
+    display: block;
+}
+form label input {
+    font: 18px Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    padding: 20px;
+    width: 300px;
+    font-weight: bolder;
+    border: 2px solid rgb(101, 245, 88);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+form label input::-moz-placeholder {
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #999;
+    font: 18px Helvetica, Arial, sans-serif;
+}
+form label input:-ms-input-placeholder {
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #999;
+    font: 18px Helvetica, Arial, sans-serif;
+}
+form label input::placeholder {
+    transition: all 0.2s ease-in-out;
+    color: #999;
+    font: 18px Helvetica, Arial, sans-serif;
+}
+form label input:focus,
+form label input.populated {
+    padding-top: 28px;
+    padding-bottom: 12px;
+}
+form label input:focus::-moz-placeholder,
+form label input.populated::-moz-placeholder {
+    color: transparent;
+}
+form label input:focus:-ms-input-placeholder,
+form label input.populated:-ms-input-placeholder {
+    color: transparent;
+}
+form label input:focus::placeholder,
+form label input.populated::placeholder {
+    color: transparent;
+}
+form label input:focus + span,
+form label input.populated + span {
+    opacity: 1;
+    top: 10px;
+}
+form label span {
+    color: #35dc9b;
+    font: 13px Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+form input[type="submit"] {
+    transition: all 0.2s ease-in-out;
+    font: 18px Helvetica, Arial, sans-serif;
+    border: none;
+    background: #1aaf75;
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 26%;
+    border: 2px solid rgb(3, 3, 3);
+    padding: 16px 40px;
+    margin-bottom: 40px;
+}
+form input[type="submit"]:hover {
+    background: #109f67;
+}

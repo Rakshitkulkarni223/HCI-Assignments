@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Tree Census Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.gardeningknowhow.com/wp-content/uploads/2017/07/hardwood-tree.jpg" type="image/png">
+</head>
+
+<body>
+    <h1 style="border: 2px solid black;background-color: aqua; padding:1% 3% 1% 3%;">Forest Tree Census</h1>
+
+    <form id="main-form" style="border: 2px solid black;padding-left: 10%;padding-right: 10%;padding-top: 3%;">
+        <p>Tree Details</p>
+        <label>
+            <input id="trre_id" type="text" placeholder="Tree ID" required="true">
+            <span>Tree ID</span>
+        </label>
+
+        <label>
+            <input id="name" type="text" placeholder="Tree Name" required="true">
+            <span>Tree Name</span>
+        </label>
+
+        <label>
+            <input id="type" type="text" placeholder="Tree Type" required="true">
+            <span>Tree Type</span>
+        </label>
+
+        <p>Date and Time</p>
+        <label>
+            <input id="date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" placeholder="Date" required="true">
+            <span>Date</span>
+        </label>
+
+        <label>
+            <input id="time" onfocus="(this.type='time')" onblur="if(!this.value)this.type='text'" placeholder="Time" required="true">
+            <span>Time</span>
+        </label>
+
+        <p>GPS Location</p>
+        <label>
+            <input id="lat" type="text" placeholder="Latitude" required="true">
+            <span>Latitude</span>
+        </label>
+
+        <label>
+            <input id="lang" type="text" placeholder="Longitude" required="true">
+            <span>Longitude</span>
+        </label>
+
+        <p>Tree Measurements</p>
+        <label>
+            <input id="height" type="text" placeholder="Height" required="true">
+            <span>Height</span>
+        </label>
+
+        <label>
+            <input id="girth" type="text" placeholder="Girth" required="true">
+            <span>Girth</span>
+        </label>
+
+        <label>
+            <input id="crown" type="text" placeholder="Crown Spread" required="true">
+            <span>Crown Spread</span>
+        </label>
+
+        <label>
+            <input id="volume" type="text" placeholder="Volume" required="true">
+            <span>Volume</span>
+        </label>
+
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#main-form').bind("submit", (e)=>{
+                e.preventDefault();
+                alert("Tree data submitted successfully!");
+                $('#main-form').find('input').not("#submit")
+                    .each(function () {
+                        $(this).val('');
+                    });
+                
+                $('#name').focus();
+            })
+            $('input').on('change', function () {
+                var input = $(this);
+                if (input.val().length) {
+                    input.addClass('populated');
+                } else {
+                    input.removeClass('populated');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

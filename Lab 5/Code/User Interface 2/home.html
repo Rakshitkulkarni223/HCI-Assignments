@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Tree Census Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.gardeningknowhow.com/wp-content/uploads/2017/07/hardwood-tree.jpg"
+        type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <h1>Forest Tree Census</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <form id="main-form" onsubmit="return submitResult();">
+
+
+                <div class="title">Tree Details</div>
+                <div class="input-container">
+                    <input id="tree_id" type="text" placeholder="Tree ID" required="true">
+                    <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                    <input id="name" type="text" placeholder="Tree Name" required="true">
+                    <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                    <input id="type" type="text" placeholder="Tree Type" required="true"
+                        onchange="display('date_and_time')">
+                    <div class="bar"></div>
+                </div>
+
+                <div id="date_and_time" style="display: none;padding-bottom: 5%;">
+                    <div class="title">Date and Time</div>
+                    <div class="input-container">
+                        <input id="date" required="required" placeholder="Date" onfocus="(this.type='date')"
+                            onblur="if(!this.value)this.type='text'" />
+                        <div class="bar"></div>
+                    </div>
+                    <div class="input-container">
+                        <input id="time" required="required" placeholder="Time" onfocus="(this.type='time')"
+                            onblur="if(!this.value)this.type='time'" onchange="display('gps_location')" />
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+
+
+                <div id="gps_location" style="display: none;padding-bottom: 5%;">
+                    <div class="title">GPS Location</div>
+                    <div class="input-container">
+                        <input type="text" id="lat" required="required" placeholder="Latitude" />
+                        <div class="bar"></div>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="long" required="required" placeholder="Longitude"
+                            onchange="display('tree_measurements')" />
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div id="tree_measurements" style="display: none;padding-bottom: 5%;">
+                    <div class="title">Tree Measurements</div>
+                    <div class="input-container">
+                        <input id="height" type="text" placeholder="Height" required="true">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="input-container">
+                        <input id="girth" type="text" placeholder="Girth" required="true">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="input-container">
+                        <input id="crown" type="text" placeholder="Crown Spread" required="true">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="input-container">
+                        <input id="volume" type="text" placeholder="Volume" required="true"
+                            onchange="display('submit_button')">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div id="submit_button" style="display: none;padding-bottom: 5%;">
+                    <div class="button-container">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+
+    function submitResult() {
+
+        if (confirm("Do you want to submit the details?🤔🤔") == false) {
+            alert("You can edit the details you entered!!!");
+            return false;
+        } else {
+            alert("Details have been submitted!!😍\nThank you for filling the details!!!😊✌");
+            return true;
+        }
+    }
+
+    function display(id) {
+        var display_content = document.getElementById(id);
+        display_content.style.display = "block";
+    }
+
+</script>
+
+</html>
