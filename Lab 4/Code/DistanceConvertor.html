@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Distance Converter Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/DistanceConvertor.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="horizontal_navigation">
+        <ul>
+            <li class="hr"><a href="home.html">Home</a></li>
+            <li class="hr"><a href="CurrencyConvertor.html">Currency Converter</a></li>
+            <li class="hr" id="active"><a href="DistanceConvertor.html">Distance Converter</a></li>
+            <li class="hr"><a href="TemperatureConvertor.html">Temperature Converter</a></li>
+            <li class="hr"><a href="TimeConvertor.html">Time Converter</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <br>
+        <h1 style="text-align: center;color: rgb(192, 241, 56);">Distance Converter</h1>
+        <br>
+        <form id="myForm">
+            <label for="Base Currency" style="color: rgb(247, 231, 10);">Base Distance</label>
+            <select class="form-control from" id="base">
+                <option value="">Select One …</option>
+                <option value='Centimetre'>Centimetre</option>
+                <option value='Foot'>Foot</option>
+                <option value='Inch'>Inch</option>
+                <option value='kilometre'>Kilometre</option>
+                <option value='Metre'>Metre</option>
+                <option value='Micrometres'>Micrometres</option>
+                <option value='Mile'>Mile</option>
+                <option value='Millimetre'>Millimetre</option>
+                <option value='Nanometre'>Nanometre</option>
+                <option value='Nautical mile'>Nautical mile</option>
+                <option value='Yard'>Yard</option>
+            </select>
+            <br>
+            <div class="form-group">
+                <label for="Base Currency" style="color: rgb(247, 231, 10);">Value to Convert</label>
+                <input type="number" class="form-control searchBox" id="baseNumber" value="" placeholder="Enter Value ...">
+            </div>
+            <label for="Target Currency" style="color: rgb(247, 231, 10);">Target Distance</label>
+            <select class="form-control to" id="target">
+                <option value="">Select One …</option>
+                <option value='Centimetre'>Centimetre</option>
+                <option value='Foot'>Foot</option>
+                <option value='Inch'>Inch</option>
+                <option value='kilometre'>Kilometre</option>
+                <option value='Metre'>Metre</option>
+                <option value='Micrometres'>Micrometres</option>
+                <option value='Mile'>Mile</option>
+                <option value='Millimetre'>Millimetre</option>
+                <option value='Nanometre'>Nanometre</option>
+                <option value='Nautical mile'>Nautical mile</option>
+                <option value='Yard'>Yard</option>
+            </select>
+        </form>
+    </div>
+    <br>
+
+    <div class="text-center">
+        <button class="btn btn-primary convert m-2" type="submit" id="convert_btn">
+            Convert
+        </button>
+
+        <button class="btn btn-primary m-2" id="clear_btn" onclick="clearVal()">
+            Reset
+        </button>
+
+    </div>
+
+
+    <div id="finalDistance" class="text-center" style="display: none;">
+        <h2 class="finalValue" style="color:rgb(248, 143, 4);">
+        </h2>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/DistanceConvertor.js"></script>
+
+</html>
